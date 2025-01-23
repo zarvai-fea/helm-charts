@@ -137,7 +137,7 @@ data:
   OWNCLOUD_QUOTA_INCLUDE_EXTERNAL_STORAGE: {{ .Values.owncloud.quotaIncludeExternalStorage | quote }}
   {{- if .Values.owncloud.redis.enabled }}
   OWNCLOUD_REDIS_DB: {{ .Values.owncloud.redis.db | quote }}
-  OWNCLOUD_REDIS_ENABLED: "true"
+  OWNCLOUD_REDIS_ENABLED: {{ .Values.owncloud.redis.enabled | quote }}
   OWNCLOUD_REDIS_FAILOVER_MODE: {{ .Values.owncloud.redis.failoverMode | quote }}
   OWNCLOUD_REDIS_HOST: {{ .Values.owncloud.redis.host | quote }}
   OWNCLOUD_REDIS_PASSWORD: {{ .Values.owncloud.redis.password | quote }}
@@ -164,7 +164,7 @@ data:
   OWNCLOUD_SINGLEUSER: {{ .Values.owncloud.singleuser | quote }}
   OWNCLOUD_SKELETON_DIRECTORY: {{ .Values.owncloud.skeletonDirectory | quote }}
   OWNCLOUD_SKIP_CHMOD: {{ .Values.owncloud.skipChmod | quote }}
-  OWNCLOUD_SKIP_CHOWN: "true"
+  OWNCLOUD_SKIP_CHOWN: {{ .Values.owncloud.skipChown | quote }}
   OWNCLOUD_SMB_LOGGING_ENABLE: {{ .Values.owncloud.smbLoggingEnable | quote }}
   OWNCLOUD_SQLITE_JOURNAL_MODE: {{ .Values.owncloud.sqliteJournalMode | quote }}
   OWNCLOUD_SUB_URL: {{ .Values.owncloud.subUrl | quote }}
@@ -180,8 +180,8 @@ data:
   OWNCLOUD_USER_SEARCH_MIN_LENGTH: {{ .Values.owncloud.userSearchMinLength | quote }}
   OWNCLOUD_VERSIONS_RETENTION_OBLIGATION: {{ .Values.owncloud.versionsRetentionObligation | quote }}
   OWNCLOUD_VERSION_HIDE: {{ .Values.owncloud.versionHide | quote }}
-  OWNCLOUD_VOLUME_APPS: {{ .Values.owncloud.volumeApps | quote }}
-  OWNCLOUD_VOLUME_CONFIG: {{ .Values.owncloud.volumeConfig | quote }}
-  OWNCLOUD_VOLUME_FILES: {{ .Values.owncloud.volumeFiles | quote }}
-  OWNCLOUD_VOLUME_ROOT: {{ .Values.owncloud.volumeRoot | quote }}
-  OWNCLOUD_VOLUME_SESSIONS: {{ .Values.owncloud.volumeSessions | quote }}
+  OWNCLOUD_VOLUME_APPS: {{ .Values.owncloud.volume.apps | quote }}
+  OWNCLOUD_VOLUME_CONFIG: {{ .Values.owncloud.volume.config | quote }}
+  OWNCLOUD_VOLUME_FILES: {{ .Values.owncloud.volume.files | quote }}
+  OWNCLOUD_VOLUME_ROOT: {{ .Values.owncloud.volume.root | quote }}
+  OWNCLOUD_VOLUME_SESSIONS: {{ .Values.owncloud.volume.sessions | quote }}

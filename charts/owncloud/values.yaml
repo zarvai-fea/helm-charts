@@ -437,7 +437,7 @@ securityContext:
   readOnlyRootFilesystem: false
 
 service:
-  type: LoadBalancer
+  type: ClusterIP
   port: 8080
   # -- Service annotations.
   annotations: {}
