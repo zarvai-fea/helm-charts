@@ -5,7 +5,7 @@ entries:
     appVersion: 10.15.0
     created: "2025-01-23T10:41:30.640275064Z"
     description: ownCloud Server Helm chart
-    digest: fba8925e9fae38cea4406818290014a21d0f8bd433c6100b981655fb1b2106ff
+    digest: 40d132e5c1b3f8a9d1fa8f42d130a345a970213d0ae58cc8bec88b42957c60f3
     home: https://owncloud.com/
     keywords:
     - owncloud
