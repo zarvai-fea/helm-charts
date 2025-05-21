@@ -185,3 +185,4 @@ data:
   OWNCLOUD_VOLUME_FILES: {{ .Values.owncloud.volume.files | quote }}
   OWNCLOUD_VOLUME_ROOT: {{ .Values.owncloud.volume.root | quote }}
   OWNCLOUD_VOLUME_SESSIONS: {{ .Values.owncloud.volume.sessions | quote }}
+  PHP_INI_SCAN_DIR: ":/mnt/data/config"
